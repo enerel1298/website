@@ -1,0 +1,24 @@
+body {
+    background-color: black;
+}    
+h1{
+   color: brown;
+   font-size: 20px; 
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+}
+   a{
+    color: aqua;
+    margin: 60px;
+    font-size: 30px;
+   }
+   p{
+    color: blue;
+    
+    padding: 40px;
+    margin: 50px;
+   }
+   address{
+    color: blue;
+    margin: 30px;
+   }
