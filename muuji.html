@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <style>  
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
             ul {
                 list-style-type: none;
                 margin: 0;
@@ -23,20 +25,26 @@
                 background-color:black ;
             }
             body{
-                background-color: white;
+                background-color:wheat ;
             }
-            .mycontainer{
-                display: flex;
+            div.mycontainer{
+                width: 100%;
+                overflow: auto;
             }
-            .mycontainer > div {
+            div.mycontainer  div {
                 width: 33%;
+                float: left;
             }
-
+            h3{
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                color: #111111;
+                text-align: center;
+            }
+           
         </style>
     </head>
     <body>
-
-        </div>
         <ul>
             <li><a href="#about">Монгол улсын шигшээ баг</a></li>
             <li><a href="#">Home</a></li>
@@ -46,33 +54,64 @@
             <li><a href="login.html">Бүртгүүлэх</a></li>
         </ul>
         <h1>SG Hawks</h1>
+      <div class="bichleg">
         <video width="400" controls>
             <source src="volleyball.mp4" type="video/mp4">
-
         </video>
         <div class="container">
-            <div>
-                <h3>Б.Батсуурь</h3>
+            <h2>Carousel Example</h2>
+            <div id="myCarousel" class="carousel-slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="myCarousel" data-slide-to="1"></li>
+                    <li data-target="myCarousel" data-slide-to="2"></li>
+                </ol>
 
-                <img src="2.jpg" width="300" height="400">
-                <h3>О.Золбоо</h3>
-                <img src="7.jpg" width="300" height="400">
-                <h3>K.Onolbek</h3>
-                <img src="3.jpg" width="300" height="400">
-            <div>
-                <h3>Enh-Erene</h3>
-                <img src="1.jpg" width="300" height="400">
-                <h3>Getso</h3>
-                <img src="8.jpg" width="300" height="400">
-                <h3>Ali</h3>
-                <img src="4.jpg" width="300" height="400">
-                <h3>Tomas</h3>
-                <img src="5.jpg" width="300" height="400">
-                <h3>Temuugen</h3>
-                <img src="6.jpg" width="300" height="400">
+                <div class="carousel-inner">
 
+                    <div class="item active">
+                        <img src="2.jpg" alt="Batsuuri" style="width: 100%;">
+                        <div class="carousel-caption">
+                            <h3>Hangal</h3>
+                            <p>henbe</p>
+                        </div>
+                    </div>
 
+                    <div class="item">
+                        <img src="4.jpg" alt="4" style="width: 100%;">
+                        <div class="carousel-caption">
+                            <h3>ali</h3>
+                            <p>thank you</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
+      </div>
+        <br><br><br><br>
+        <div class="mycontainer">
+            <div>
+                <img src="1.jpg" width="500" height="600">
+                <h3>Enh-Erdene</h3>
+                <img src="2.jpg" width="500" height="600">
+                <h3>Batsuuri</h3>
+                <img src="3.jpg" width="500" height="600">
+                <h3>Onolbek</h3>
+            </div>
+            <div>
+                <img src="4.jpg" width="500" height="600">
+                <h3>Ali</h3>
+                <img src="5.jpg" width="500" height="600">
+                <h3>Tomas</h3>
+                <img src="6.jpg" width="500" height="600">
+                <h3>Temuugen</h3>
+            </div>
+            <div>
+                <img src="7.jpg" width="500" height="600">
+                <h3>Zolboo</h3>
+                <img src="8.jpg" width="500" height="600">
+                <h3>Getso</h3>
+                
             </div>
         </div>
     </body>
