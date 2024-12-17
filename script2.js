@@ -1,4 +1,4 @@
-const canvas = document.getElementById("snow")
+const canvas = document.getElementById("snow");
 const ctx = canvas.getContext("2d");
 
 canvas.width = window.innerWidth;
@@ -15,10 +15,10 @@ for (let i = 0; i < 200; i++) {
 }
 
 function drawSnowflakes() {
-    ctx.clearRect(0,0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     snowflakes.forEach((flake) => {
-        const gradient = ctx.createRedialGradient(
+        const gradient = ctx.createRadialGradient(
             flake.x,
             flake.y,
             0,
@@ -26,9 +26,9 @@ function drawSnowflakes() {
             flake.y,
             flake.radius
         );
-        gradient.addColorStop(0,"rgba(255, 255, 255, 1)");
+        gradient.addColorStop(0, "rgba(255, 255, 255, 1)");
         gradient.addColorStop(0.5, "rgba(255, 255, 255, 0.8)");
-        gradient.addColorStop(1, "rgba(255,255,255, 0,)");
+        gradient.addColorStop(1, "rgba(255, 255, 255, 0)");
 
         ctx.fillStyle = gradient;
         ctx.beginPath();
@@ -38,13 +38,13 @@ function drawSnowflakes() {
 }
 
 function updateSnowflakes() {
-    snowflakes.forEach((flake) =>{
+    snowflakes.forEach((flake) => {
         flake.y += flake.speed;
         if (flake.y > canvas.height) {
             flake.y = 0;
             flake.x = Math.random() * canvas.width;
         }
-    })
+    });
 }
 
 function animate() {

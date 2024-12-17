@@ -3,13 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Merry christmas Example</title>
-        <link rel="stylesheet" href="style merry.css">
-
+        <title>Merry Christmas Example</title>
+        <link rel="stylesheet" href="style merry2.css">
     </head>
     <body>
-        <h1 id="jittery">Merry Christmas!</h1>
-        <h2>To everyone <em>at</em> Programmist Happy<br>/>...and everyone <em>on</em> Programmist Happy!</h2>
+        <h1 id="jittery">MerryChristmas!</h1>
+        <h2>To everyone <em>at</em> Programmist Happy<br/>...and everyone <em>on</em> Programmist Happy!</h2>
         <div class="santa"></div>
         <script>
             const jittery = document.getElementById("jittery");
@@ -17,7 +16,7 @@
             let letters = "";
 
             for (let i = 0; i < aText.length; i++) {
-                letters += `<span style="animation-delay: -${i * 25 + 70}ms;">${aText[i]}</span`;
+                letters += `<span style="animation-delay: -${i * 25 + 70}ms;">${aText[i]}</span>`;
             }
 
             jittery.innerHTML = letters;
