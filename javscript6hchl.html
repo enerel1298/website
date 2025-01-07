@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>java "this"</h1>
+
+        <p>i42jtgtrghrtlegbtl3hgut</p>
+        <p>hqvblrjhbvrlgth</p>
+        <button id="btn">Click me</button>
+
+        <p id="demo"></p>
+        <script>
+            let hello = "";
+
+            hello = () => {
+                document.getElementById(demo).innerHTML += this;
+
+            }
+            window.addEventListener("load",hello);
+
+            document.getElementById("btn").addEventListener("click",
+                hello
+            )
+        </script>
+    </body>
+</html>

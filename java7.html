@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>javascript getters and seters</h2>
+
+        <p>getters and setter </p>
+
+        <p id="demo"></p>
+
+        <script>
+            const person = {
+                firstName: "Jhon",
+                lastName: "Doe",
+                language: "",
+                set lang(lang) {
+                    this.language = lang.toUpperCase();
+                }
+            };
+
+            person.lang = "en";
+
+            document.getElementById("demo").innerHTML = 
+            person.language;
+        </script>
+    </body>
+</html>

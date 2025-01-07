@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h2>....</h2>
+        <p>.....</p>
+        <p id="demo"></p>
+
+        <script>
+            function sumAll() {
+                let sum = 0;
+                for(let i = 0; i < arguments.length; i++) {
+                    sum += arguments[i];
+                }
+                return sum;
+            }
+            document.getElementById("demo").innerHTML = sumAll(1,
+                123, 500, 44,
+            );
+        </script>
+    </body>
+</html>
