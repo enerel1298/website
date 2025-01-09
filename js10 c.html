@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <p id="demo"></p>
+
+        <script>
+            const obj = {name: "Jhon", age: function () {return 30;},
+        city: "new york"}
+        const myJSON = JSON.stringify(obj);
+        document.getElementById("demo").innerHTML = myJSON;
+        </script>
+    </body>
+</html>
